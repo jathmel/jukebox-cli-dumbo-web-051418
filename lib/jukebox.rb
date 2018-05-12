@@ -28,23 +28,23 @@ def play(songs)
   puts 'Please enter a song name or number:'
   input = gets.chomp
   case input
-    when 1
+    when '1',
       puts "Playing #{songs[0]}"
-    when 2 || 'Tokyo Police Club - Wait Up'
+    when '2', 'Tokyo Police Club - Wait Up'
       puts 'Tokyo Police Club - Wait Up'
-    when 3 || 'Sufjan Stevens - Too Much'
+    when '3', 'Sufjan Stevens - Too Much'
       puts 'Sufjan Stevens - Too Much'
-    when 4 || 'The Naked and the Famous - Young Blood'
+    when '4', 'The Naked and the Famous - Young Blood'
       puts 'The Naked and the Famous - Young Blood'
-    when 5 || '(Far From) Home - Tiga'
+    when '5', '(Far From) Home - Tiga'
       puts '(Far From) Home - Tiga'
-    when 6 || 'The Cults - Abducted'
+    when '6', 'The Cults - Abducted'
       puts 'The Cults - Abducted'
-    when 7 || 'Phoenix - Consolation Prizes'
+    when '7', 'Phoenix - Consolation Prizes'
       puts 'Phoenix - Consolation Prizes'
-    when 8 || 'Harry Chapin - Cats in the Cradle'
+    when '8', 'Harry Chapin - Cats in the Cradle'
       puts 'Harry Chapin - Cats in the Cradle'
-    when 9 || 'Amos Lee - Keep It Loose, Keep It Tight'
+    when '9', 'Amos Lee - Keep It Loose, Keep It Tight'
       puts 'Amos Lee - Keep It Loose, Keep It Tight'
     else
       puts 'Invalid input, please try again'
