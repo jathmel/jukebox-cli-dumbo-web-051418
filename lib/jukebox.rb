@@ -60,16 +60,17 @@ def run
   puts 'Please enter a command:'
   command = gets.chomp
   until command == 'exit'
-  case command 
-    when 'help' 
-      help 
-    when 'list' 
-      list
-    when 'play'
-      play
-    when 'exit'
-      exit_jukebox
-    else
-      'Invalid command'
+    case command 
+      when 'help' 
+        help 
+      when 'list' 
+        list
+      when 'play'
+        play
+      when 'exit'
+        exit_jukebox
+      else
+        'Invalid command'
     end
+  end
 end 
