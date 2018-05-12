@@ -29,7 +29,7 @@ def play(songs)
   input = gets.chomp.to_i
   case input
     when 1
-      puts "Playing #{song[0]}"
+      puts "Playing #{songs[0]}"
     when 2 || 'Tokyo Police Club - Wait Up'
       puts 'Tokyo Police Club - Wait Up'
     when 3 || 'Sufjan Stevens - Too Much'
