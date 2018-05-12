@@ -58,9 +58,8 @@ end
 def run(songs)
   help 
   puts 'Please enter a command:'
+  command = gets.chomp
   until command == 'exit'
-    command = gets.chomp
-  
     case command 
       when 'help' 
         help 
@@ -73,5 +72,6 @@ def run(songs)
       else
         'Invalid command'
     end
+    command = gets.chomp
   end
 end 
