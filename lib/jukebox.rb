@@ -58,6 +58,18 @@ end
 def run
   help 
   puts 'Please enter a command:'
-  command = gets.chomp 
-  
+  command = gets.chomp
+  until command == 'exit'
+  case command 
+    when 'help' 
+      help 
+    when 'list' 
+      list
+    when 'play'
+      play
+    when 'exit'
+      exit_jukebox
+    else
+      'Invalid command'
+    end
 end 
