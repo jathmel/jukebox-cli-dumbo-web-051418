@@ -26,7 +26,7 @@ end
 
 def play(songs)
   puts 'Please enter a song name or number:'
-  input = gets.chomp.to_i
+  input = gets.chomp
   case input
     when 1
       puts "Playing #{songs[0]}"
